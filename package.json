@@ -1,10 +1,21 @@
 {
-  "name": "canvasfilters",
-  "author": "Ilmari Heikkinen <ilmari@fhtr.net>",
-  "version": "0.0.1",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/kig/canvasfilters"
-  },
-  "main": "./filters.js"
+    "name": "CanvasFilters",
+    "version": "0.0.1",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/Velm14/canvasfilters"
+    },
+    "main": "./index.js",
+    "types": "./index.d.ts",
+    "readmeFilename": "README.md",
+    "private": false,
+    "author": {
+        "name": "Mishyn Hennadii",
+        "email": "misgena@gmail.com"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "typescript": "^2.7.2"
+    }
 }
