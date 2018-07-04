@@ -1,12 +1,5 @@
 
-
-// export as namespace Filters;
-
-export = Filters;
-
-export declare class Filters {
-
-    constructor();
+declare namespace Filters {
 
     /**
      * Grayscale the image, and you can control effect of it by parameter.
@@ -18,7 +11,7 @@ export declare class Filters {
      * @param {number} effect - in percents from 1 to 100
      * @returns {ImageData}
      */
-    grayscale(pixels: ImageData, effect: number): ImageData;
+    function grayscale(pixels: ImageData, effect: number): ImageData;
 
     /**
      * BrightnessContrast method could change both brightness and contrast for same range of time
@@ -28,6 +21,7 @@ export declare class Filters {
      * @param {number} contrast in range from 1 to 3, where 1 - is original
      * @returns {ImageData}
      */
-    brightnessContrast(pixels: ImageData, brightness: number, contrast: number): ImageData;
+    function brightnessContrast(pixels: ImageData, brightness: number, contrast: number): ImageData;
 }
 
+export = Filters;
